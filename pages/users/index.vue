@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text" v-model="userId" />
+    <input v-model="userId" type="text" />
     <button @click="onLoadUser">Load User</button>
   </div>
 </template>
