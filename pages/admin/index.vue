@@ -5,7 +5,7 @@
     </section>
     <section class="existing-posts">
       <h1>Existing Posts</h1>
-      <post-list></post-list>
+      <post-list is-admin></post-list>
     </section>
   </div>
 </template>
