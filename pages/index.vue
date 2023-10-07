@@ -4,21 +4,22 @@
       <h1>Get the lastest tech news!</h1>
     </section>
     <section class="featured-posts">
-      <PostPreview
+      <post-preview
         id="1"
         thumbnail="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftraverseanywhere.files.wordpress.com%2F2020%2F07%2Ftechnology-watch.jpg&f=1&nofb=1&ipt=f8c750e3c3229431c54ba734a6504da44fdc4f5c3695062691c4d1a848af948c&ipo=images"
         title="Hello there"
         preview-text="This is my first post!"
       />
-      <PostPreview
+      <post-preview
         id="2"
         thumbnail="https://www.aesc.org/sites/default/files/uploads/images/tech-og.jpg"
         title="Some Ai Stuff"
-        preview-text="Becuse its on mainstream!"
+        preview-text="Because its on mainstream!"
       />
     </section>
   </div>
 </template>
+
 <script>
 import PostPreview from '@/components/Posts/PostPreview'
 export default {
@@ -27,6 +28,7 @@ export default {
   },
 }
 </script>
+
 <style scoped>
 .intro {
   height: 300px;
