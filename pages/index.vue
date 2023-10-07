@@ -14,8 +14,8 @@ export default {
   components: {
     PostList,
   },
-  data() {
-    return {
+  asyncData() {
+    const postsData = {
       loadedPosts: [
         {
           id: '0696f357-001a-4cd9-b9c5-7a356b9be204',
@@ -35,6 +35,10 @@ export default {
         },
       ],
     }
+    // the idea was to simulate a fetch to a backend serve using setTimeout, but
+    // eslint was showing an error:
+    //  Unexpected setTimeout in asyncData  nuxt/no-timing-in-fetch-data
+    return postsData
   },
 }
 </script>
