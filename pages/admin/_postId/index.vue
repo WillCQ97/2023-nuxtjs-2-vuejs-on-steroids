@@ -10,6 +10,7 @@
 import AdminPostForm from '@/components/Admin/AdminPostForm'
 export default {
   components: { AdminPostForm },
+  layout: 'admin',
   data() {
     return {
       loadedPost: {
