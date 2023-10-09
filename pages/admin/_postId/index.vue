@@ -21,23 +21,17 @@ export default {
           '.json'
       )
       .then((res) => {
-        return { loadedPost: res.data }
+        return { loadedPost: { ...res.data, id: context.params.postId } }
       })
       .catch((e) => context.error(e))
   },
 
   methods: {
-    onSubmitted(postData) {
+    onSubmitted(editedPost) {
       // atualizar os dados do post
-      this.$axios
-        .put(
-          'https://nuxt-blog-47a07-default-rtdb.firebaseio.com/posts/' +
-            this.$route.params.postId +
-            '.json',
-          { ...postData, updatedDate: new Date() }
-        )
-        .then((result) => this.$router.push('/admin'))
-        .catch((e) => console.log(e))
+      this.$store
+        .dispatch('editPost', editedPost)
+        .then(() => this.$router.push('/admin'))
     },
   },
 }
