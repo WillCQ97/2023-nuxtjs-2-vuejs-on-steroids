@@ -21,10 +21,29 @@
 
 <script>
 export default {
-  asyncData(context, callback) {
-    return new Promise().catch(e => {
-      context.error(new Error("error"));
+  asyncData(context) {
+    return new Promise((resolve, reject) => {
+      resolve({
+        loadedPost: {
+          id: '0696f357-001a-4cd9-b9c5-7a356b9be204',
+          title: 'Hello there (ID: ' + context.route.params.id + ')',
+          previewText: 'This is my first post!',
+          author: 'Maximilian Schwarzmüller',
+          updatedDate: new Date(),
+          content:
+            'Some dumy text which is definitely not the preview text though.',
+          thumbnail:
+            'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftraverseanywhere.files.wordpress.com%2F2020%2F07%2Ftechnology-watch.jpg&f=1&nofb=1&ipt=f8c750e3c3229431c54ba734a6504da44fdc4f5c3695062691c4d1a848af948c&ipo=images',
+        },
+      })
+      // reject(new Error("myError"))
     })
+      .then((data) => {
+        return data
+      })
+      .catch((e) => {
+        context.error(e)
+      })
   },
 }
 </script>
