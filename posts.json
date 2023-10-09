@@ -1,0 +1,44 @@
+{
+  "posts": {
+    "0696f357-001a-4cd9-b9c5-7a356b9be204": {
+      "title": "Hello there",
+      "previewText": "This is my first post!",
+      "author": "Maximilian Schwarzmüller",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftraverseanywhere.files.wordpress.com%2F2020%2F07%2Ftechnology-watch.jpg&f=1&nofb=1&ipt=f8c750e3c3229431c54ba734a6504da44fdc4f5c3695062691c4d1a848af948c&ipo=images",
+      "content": "Some dumy text which is definitely not the preview text though.",
+      "updatedDate": ""
+    },
+    "ed23351f-60cf-4d1e-ba88-fd27d10e670b": {
+      "title": "Some Ai Stuff",
+      "previewText": "Because its on mainstream!",
+      "content": "",
+      "author": "Mário Novo CTO",
+      "thumbnail": "https://www.aesc.org/sites/default/files/uploads/images/tech-og.jpg",
+      "updatedDate": ""
+    },
+    "4c7dff74-daca-4476-9d96-c06897cec2fa": {
+      "author": "Wiris Werneck",
+      "title": "PHP is the best language of the world!",
+      "previewText": "The title is enought!",
+      "content": "The title said it all!",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftheguide000.files.wordpress.com%2F2017%2F08%2Fphp-logo.gif&f=1&nofb=1&ipt=aa4e327eb4972e51219f206a7abdcd04a5faf099834f1b86a34d98dedcbacc14&ipo=images",
+      "updatedDate": ""
+    },
+    "-NgHiPWNfzlvzAyPU4BE": {
+      "author": "Willian",
+      "content": "Testando a integração do componente com o firebase.",
+      "previewText": "Testando a integração",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdevopedia.org%2Fimages%2Farticle%2F133%2F2028.1541050800.png&f=1&nofb=1&ipt=5959a1d7c0a77c51ab607947a573f6d08023b224239fd38d8b585a00230a6ac7&ipo=images",
+      "title": "Teste do Firebase",
+      "updatedDate": ""
+    },
+    "-NgHofQIDe_w7xNXZBuM": {
+      "author": "Max",
+      "content": "This is, hopefully, the final post.",
+      "previewText": "Does it work?",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-4ICDmwxCxHE%2FTqnlpfu98yI%2FAAAAAAAAASk%2FRl7u2zKoafA%2Fs1600%2Ftesting-testing-123.jpg&f=1&nofb=1&ipt=bc3b1c5cef59f343551518f241c8de102c2fce2ff254a2f7ca691f940b88c345&ipo=images",
+      "title": "A new Post ... again",
+      "updatedDate": "2023-10-09T05:04:40.501Z"
+    }
+  }
+}
