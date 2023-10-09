@@ -18,7 +18,9 @@ import PostList from '@/components/Posts/PostList'
 
 export default {
   components: { AppButton, PostList },
+
   layout: 'admin',
+
   computed: {
     loadedPosts() {
       return this.$store.getters.loadedPosts

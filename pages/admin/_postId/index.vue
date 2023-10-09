@@ -1,7 +1,7 @@
 <template>
   <div class="admin-post-page">
     <section class="update-form">
-      <admin-post-form @submit="onSubmitted" :post="loadedPost" />
+      <admin-post-form :post="loadedPost" @submit="onSubmitted" />
     </section>
   </div>
 </template>
@@ -29,6 +29,15 @@ export default {
   methods: {
     onSubmitted(postData) {
       // atualizar os dados do post
+      this.$axios
+        .put(
+          'https://nuxt-blog-47a07-default-rtdb.firebaseio.com/posts/' +
+            this.$route.params.postId +
+            '.json',
+          { ...postData, updatedDate: new Date() }
+        )
+        .then((result) => this.$router.push('/admin'))
+        .catch((e) => console.log(e))
     },
   },
 }
