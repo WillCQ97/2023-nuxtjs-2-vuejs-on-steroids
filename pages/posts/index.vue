@@ -9,7 +9,7 @@ import PostList from '@/components/Posts/PostList'
 
 export default {
   components: { PostList },
-  asyncData(context) {
+  fetch(context) {
     return new Promise((resolve, reject) => {
       const postsData = {
         loadedPosts: [
@@ -34,15 +34,17 @@ export default {
       resolve(postsData)
     })
       .then((returnedData) => {
-        return returnedData
+        context.store.commit('setPosts', returnedData.loadedPosts)
       })
       .catch((e) => {
         context.error(e)
       })
     // return postsData
   },
-  created() {
-    this.$store.dispatch('setPosts', this.loadedPosts)
+  computed: {
+    loadedPosts() {
+      return this.$store.getters.loadedPosts
+    },
   },
 }
 </script>
