@@ -1,4 +1,5 @@
 export default {
+  mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'WD Blog',
@@ -8,7 +9,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'My cool Web Development Blog' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'My cool Web Development Blog',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
@@ -18,6 +23,15 @@ export default {
         href: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap',
       },
     ],
+  },
+
+  /* controls the progress bar at the top of the page on universal mode */
+  loading: { color: '#fa923f', head: '4px', duration: 5000 },
+
+  /* shows a icon on the center of the page on spa mode */
+  loadingIndicator: {
+    name: 'circle',
+    color: '#fa923f',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
