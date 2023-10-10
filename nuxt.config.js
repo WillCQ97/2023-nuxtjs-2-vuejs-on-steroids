@@ -51,6 +51,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios'],
+  axios: {
+    baseURL:
+      process.env.BASE_URL ||
+      'https://nuxt-blog-47a07-default-rtdb.firebaseio.com',
+    credentials: false,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -61,7 +67,6 @@ export default {
       process.env.BASE_URL ||
       'https://nuxt-blog-47a07-default-rtdb.firebaseio.com',
   },
-  // srcDir: 'client-app'
   transition: {
     name: 'fade',
     mode: 'out-in',

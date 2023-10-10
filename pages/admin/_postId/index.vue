@@ -16,13 +16,13 @@ export default {
 
   asyncData(context) {
     return context.$axios
-      .get(
+      .$get(
         'https://nuxt-blog-47a07-default-rtdb.firebaseio.com/posts/' +
           context.params.postId +
           '.json'
       )
-      .then((res) => {
-        return { loadedPost: { ...res.data, id: context.params.postId } }
+      .then((data) => {
+        return { loadedPost: { ...data, id: context.params.postId } }
       })
       .catch((e) => context.error(e))
   },

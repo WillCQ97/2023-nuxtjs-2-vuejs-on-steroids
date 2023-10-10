@@ -22,10 +22,10 @@
 <script>
 export default {
   asyncData(context) {
-    return context.$axios
-      .get(process.env.baseUrl + '/posts/' + context.params.id + '.json')
-      .then((res) => {
-        return { loadedPost: res.data }
+    return context.app.$axios
+      .$get('/posts/' + context.params.id + '.json')
+      .then((data) => {
+        return { loadedPost: data }
       })
       .catch((e) => context.error(e))
   },
