@@ -23,11 +23,7 @@
 export default {
   asyncData(context) {
     return context.$axios
-      .get(
-        'https://nuxt-blog-47a07-default-rtdb.firebaseio.com/posts/' +
-          context.params.id +
-          '.json'
-      )
+      .get(process.env.baseUrl + '/posts/' + context.params.id + '.json')
       .then((res) => {
         return { loadedPost: res.data }
       })
