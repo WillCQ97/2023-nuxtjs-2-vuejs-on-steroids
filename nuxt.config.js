@@ -57,6 +57,17 @@ export default {
 
   dev: true,
   env: {
-    baseUrl: process.env.BASE_URL || 'https://nuxt-blog-47a07-default-rtdb.firebaseio.com'
-  }
+    baseUrl:
+      process.env.BASE_URL ||
+      'https://nuxt-blog-47a07-default-rtdb.firebaseio.com',
+  },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: '*',
+        component: resolve(__dirname, 'pages/index.vue'),
+      })
+    },
+    linkActiveClass: 'active',
+  },
 }
