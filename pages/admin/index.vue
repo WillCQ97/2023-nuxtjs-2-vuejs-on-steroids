@@ -13,12 +13,7 @@
 </template>
 
 <script>
-import AppButton from '@/components/UI/AppButton'
-import PostList from '@/components/Posts/PostList'
-
 export default {
-  components: { AppButton, PostList },
-
   layout: 'admin',
 
   computed: {
