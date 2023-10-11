@@ -116,16 +116,8 @@ const createStore = () => {
               'expirationDate',
               new Date().getTime() + result.expiresIn * 1000
             )
-
-            vuexContext.dispatch('setLogoutTimer', result.expiresIn * 1000)
           })
           .catch((e) => console.log(e))
-      },
-
-      setLogoutTimer(vuexContext, duration) {
-        setTimeout(() => {
-          vuexContext.commit('clearToken')
-        }, duration)
       },
 
       initAuth(vuexContext, request) {
@@ -157,13 +149,11 @@ const createStore = () => {
 
         // the plus before expirationDate converts the string into a number
         if (new Date().getTime() > +expirationDate || !token) {
+          console.log('No token or invalid token')
+          vuexContext.commit('clearToken')
           return
         }
         vuexContext.commit('setToken', token)
-        vuexContext.dispatch(
-          'setLogoutTimer',
-          +expirationDate - new Date().getTime()
-        )
       },
     },
 
