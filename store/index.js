@@ -2,10 +2,15 @@ import Vuex from 'vuex'
 
 const createStore = () => {
   return new Vuex.Store({
+    /* STATE */
+
     state: {
       loadedPosts: [],
       token: null,
     },
+
+    /* MUTATIONS */
+
     mutations: {
       setPosts(state, posts) {
         state.loadedPosts = posts
@@ -25,7 +30,14 @@ const createStore = () => {
       setToken(state, token) {
         state.token = token
       },
+
+      clearToken(state) {
+        state.token = null
+      },
     },
+
+    /* ACTIONS */
+
     actions: {
       nuxtServerInit(vuexContext, context) {
         return context.app.$axios
@@ -89,10 +101,19 @@ const createStore = () => {
           })
           .then((result) => {
             vuexContext.commit('setToken', result.idToken)
+            vuexContext.dispatch('setLogoutTimer', result.expiresIn * 1000)
           })
           .catch((e) => console.log(e))
       },
+
+      setLogoutTimer(vuexContext, duration) {
+        setTimeout(() => {
+          vuexContext.commit('clearToken')
+        }, duration)
+      },
     },
+
+    /* GETTERS */
 
     getters: {
       loadedPosts(state) {
