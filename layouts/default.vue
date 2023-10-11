@@ -12,6 +12,7 @@ import TheSidenav from '@/components/Navigation/TheSideNav'
 
 export default {
   components: { TheHeader, TheSidenav },
+  // middleware: 'log',
   data() {
     return {
       displaySideNav: false,

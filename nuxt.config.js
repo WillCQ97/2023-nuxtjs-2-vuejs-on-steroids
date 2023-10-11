@@ -71,4 +71,7 @@ export default {
     name: 'fade',
     mode: 'out-in',
   },
+  // route: {
+  //   middleware: 'log'
+  // }
 }
