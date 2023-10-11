@@ -71,5 +71,8 @@ module.exports = {
   transition: {
     name: 'fade',
     mode: 'out-in'
+  },
+  router: {
+    middleware: 'log'
   }
 }
