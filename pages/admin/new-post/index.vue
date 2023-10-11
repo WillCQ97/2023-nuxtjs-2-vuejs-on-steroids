@@ -12,7 +12,9 @@ import AdminPostForm from '@/components/Admin/AdminPostForm'
 export default {
   components: { AdminPostForm },
   layout: 'admin',
-  
+
+  middleware: ['auth'],
+
   methods: {
     onSubmitted(postData) {
       // postData é o dado passado em this.$emit('submit', this.editedPost)
