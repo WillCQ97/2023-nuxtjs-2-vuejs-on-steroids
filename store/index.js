@@ -101,6 +101,11 @@ const createStore = () => {
           })
           .then((result) => {
             vuexContext.commit('setToken', result.idToken)
+            localStorage.setItem('token', result.idToken)
+            localStorage.setItem(
+              'tokenExpiration',
+              new Date().getTime() + result.expiresIn * 1000
+            )
             vuexContext.dispatch('setLogoutTimer', result.expiresIn * 1000)
           })
           .catch((e) => console.log(e))
@@ -110,6 +115,18 @@ const createStore = () => {
         setTimeout(() => {
           vuexContext.commit('clearToken')
         }, duration)
+      },
+
+      initAuth(vuexContext) {
+        const token = localStorage.getItem('token')
+        const expirationDate = localStorage.getItem('tokenExpiration')
+        
+        // the plus before expirationDate converts the string into a number
+        if (new Date().getTime() > +expirationDate || !token) {
+          return
+        }
+        vuexContext.commit('setToken', token)
+        vuexContext.dispatch('setLogoutTimer', +expirationDate - new Date().getTime())
       },
     },
 

@@ -13,7 +13,7 @@ export default {
   components: { AdminPostForm },
   layout: 'admin',
 
-  middleware: ['auth'],
+  middleware: ['check-auth','auth'],
 
   methods: {
     onSubmitted(postData) {
