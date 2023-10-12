@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'WD Blog',
