@@ -116,6 +116,10 @@ const createStore = () => {
               'expirationDate',
               new Date().getTime() + result.expiresIn * 1000
             )
+
+            return this.$axios.$post('http://localhost:3000/api/track-data', {
+              data: 'User authenticated!',
+            })
           })
           .catch((e) => console.log(e))
       },
