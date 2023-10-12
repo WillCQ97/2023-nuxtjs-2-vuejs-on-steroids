@@ -77,5 +77,5 @@ export default {
   // route: {
   //   middleware: 'log'
   // }
-  serverMiddleware: [bodyParser.json(), '~/api'],
+  serverMiddleware: [bodyParser.json(), '~/server'],
 }
