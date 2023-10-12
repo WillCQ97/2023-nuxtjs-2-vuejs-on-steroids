@@ -1,3 +1,5 @@
+import bodyParser from 'body-parser'
+
 export default {
   mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -75,4 +77,5 @@ export default {
   // route: {
   //   middleware: 'log'
   // }
+  serverMiddleware: [bodyParser.json(), '~/api'],
 }
