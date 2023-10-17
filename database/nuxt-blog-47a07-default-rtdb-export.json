@@ -1,0 +1,87 @@
+{
+  "posts": {
+    "-NgHiPWNfzlvzAyPU4BE": {
+      "author": "Willian",
+      "content": "Testando a integração do componente com o firebase.\n\nAgora, fazendo teste de edição.",
+      "previewText": "Testando a integração",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdevopedia.org%2Fimages%2Farticle%2F133%2F2028.1541050800.png&f=1&nofb=1&ipt=5959a1d7c0a77c51ab607947a573f6d08023b224239fd38d8b585a00230a6ac7&ipo=images",
+      "title": "Teste do Firebase (editado)",
+      "updatedDate": "2023-10-09T06:08:08.867Z"
+    },
+    "-NgHofQIDe_w7xNXZBuM": {
+      "author": "Max",
+      "content": "This is, hopefully, the final post.",
+      "id": "-NgHofQIDe_w7xNXZBuM",
+      "previewText": "Does it work?!!!!",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-4ICDmwxCxHE%2FTqnlpfu98yI%2FAAAAAAAAASk%2FRl7u2zKoafA%2Fs1600%2Ftesting-testing-123.jpg&f=1&nofb=1&ipt=bc3b1c5cef59f343551518f241c8de102c2fce2ff254a2f7ca691f940b88c345&ipo=images",
+      "title": "A new Post ... again",
+      "updatedDate": "2023-10-11T04:03:06.735Z"
+    },
+    "-NgLeiKcm1_B5XnRT1xD": {
+      "author": "Pedróvski",
+      "content": "Testando a criação de um novo post, sincronizando o backend e a store.",
+      "id": "-NgLeiKcm1_B5XnRT1xD",
+      "previewText": "A brilliant new preview text (edited²)",
+      "thumbnail": "http://www.dumpaday.com/wp-content/uploads/2017/01/random-pictures-109.jpg",
+      "title": "Testando",
+      "updatedDate": "2023-10-09T23:24:47.527Z"
+    },
+    "-NgMXIanTfdTT_eqhrDr": {
+      "author": "Willian",
+      "content": "Pegando uma imagem aleatória no duck duck go pesquisando por \"random images\"\n\nhttps://duckduckgo.com/?t=ffab&q=random+images&iax=images&ia=images&iai=http%3A%2F%2Fwww.dumpaday.com%2Fwp-content%2Fuploads%2F2018%2F02%2Frandom-pictures-32.jpg",
+      "previewText": "Imagem aleatória",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dumpaday.com%2Fwp-content%2Fuploads%2F2018%2F02%2Frandom-pictures-32.jpg&f=1&nofb=1&ipt=ffb2262aa790db8f5da174329e43fecf106cddeb00c51113ce407572427fd2eb&ipo=images",
+      "title": "Uma imagem aleatória",
+      "updatedDate": "2023-10-10T03:02:30.345Z"
+    },
+    "-NgZpkTpPJM8tpD9RLMo": {
+      "author": "Eris",
+      "content": "Para ter acesso ao curso é só mandar uma DM para mim ;-).",
+      "previewText": "Não é clique bait.",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.-vQX2T47LBNDhxltLgmMYgHaEj%26pid%3DApi&f=1&ipt=30eece261b4c0d33097efb4ece824facdbcfa3abec14f3a65b7eefca39762289&ipo=images",
+      "title": "Curso de Excel do Básico ao Excelsior",
+      "updatedDate": "2023-10-12T17:02:33.156Z"
+    },
+    "-Ng_M4L0L9VSPYHRMzPQ": {
+      "author": "Willian",
+      "content": "Testando funcionamento do deploy deste blog no netlify.",
+      "previewText": "Mais um teste, mas agora é de entrega",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstorage.googleapis.com%2Fcdn.thenewstack.io%2Fmedia%2F2018%2F03%2Fa6345c70-988825c6-netlifylogo.jpg&f=1&nofb=1&ipt=5d56888710c59e3947fc8a1afd84d67142cf7875e613b73510ba7488d1dc41d6&ipo=images",
+      "title": "Testando deploy no netlify",
+      "updatedDate": "2023-10-12T19:28:09.473Z"
+    },
+    "-NgidN5fRQXFlgr4KImm": {
+      "author": "Wuilha",
+      "content": "Teste de deploy",
+      "previewText": "Teste de deploy",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftekiosmag.com%2Fwp-content%2Fuploads%2F2021%2F06%2Fvercel.png&f=1&nofb=1&ipt=1cac98d9a5c833e36cea801ea7bcd1265b52466fce269eb88e4e69c046e76b95&ipo=images",
+      "title": "Testando deploy na vercel",
+      "updatedDate": "2023-10-14T14:44:40.061Z"
+    },
+    "0696f357-001a-4cd9-b9c5-7a356b9be204": {
+      "author": "Maximilian Schwarzmüller",
+      "content": "Some dumy text which is definitely not the preview text though.",
+      "previewText": "This is my first post!",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftraverseanywhere.files.wordpress.com%2F2020%2F07%2Ftechnology-watch.jpg&f=1&nofb=1&ipt=f8c750e3c3229431c54ba734a6504da44fdc4f5c3695062691c4d1a848af948c&ipo=images",
+      "title": "Hello there",
+      "updatedDate": ""
+    },
+    "4c7dff74-daca-4476-9d96-c06897cec2fa": {
+      "author": "Wiris Werneck",
+      "content": "The title said it all!",
+      "previewText": "The title is enought!",
+      "thumbnail": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftheguide000.files.wordpress.com%2F2017%2F08%2Fphp-logo.gif&f=1&nofb=1&ipt=aa4e327eb4972e51219f206a7abdcd04a5faf099834f1b86a34d98dedcbacc14&ipo=images",
+      "title": "PHP is the best language of the world!",
+      "updatedDate": ""
+    },
+    "ed23351f-60cf-4d1e-ba88-fd27d10e670b": {
+      "author": "Mário Novo CTO",
+      "content": "The AI thing is realy on the Hype these days.",
+      "id": "ed23351f-60cf-4d1e-ba88-fd27d10e670b",
+      "previewText": "Because its on mainstream!",
+      "thumbnail": "https://www.aesc.org/sites/default/files/uploads/images/tech-og.jpg",
+      "title": "Some Ai Stuff",
+      "updatedDate": "2023-10-11T03:42:18.464Z"
+    }
+  }
+}
